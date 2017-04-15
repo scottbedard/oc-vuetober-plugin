@@ -1,0 +1,11 @@
+{
+    "name": "author/plugin",
+    "description": "No description provided yet...",
+    "type": "project",
+    "license": "MIT",
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*@dev",
+        "fzaninotto/faker": "1.5.*",
+        "satooshi/php-coveralls": "~1.0"
+    }
+}

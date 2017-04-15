@@ -86,15 +86,21 @@ class Plugin extends PluginBase
      */
     public function registerNavigation()
     {
-        return []; // Remove this line to activate
-
         return [
             'plugin' => [
-                'label'       => 'Plugin',
-                'url'         => Backend::url('author/plugin/mycontroller'),
                 'icon'        => 'icon-leaf',
-                'permissions' => ['author.plugin.*'],
+                'label'       => 'author.plugin::lang.plugin.name',
                 'order'       => 500,
+                'permissions' => ['author.plugin.*'],
+                'url'         => Backend::url('author/plugin/things'),
+                'sideMenu' => [
+                    'things' => [
+                        'icon'          => 'icon-leaf',
+                        'label'         => 'Things',
+                        'permissions'   => [],
+                        'url'           => Backend::url('author/plugin/things'),
+                    ],
+                ],
             ],
         ];
     }

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Thing
+
+# Model Form Field configuration
+form: $/author/plugin/models/thing/fields.yaml
+
+# Model Class name
+modelClass: Author\Plugin\Models\Thing
+
+# Default redirect location
+defaultRedirect: author/plugin/things
+
+# Create page
+create:
+    title: Create Thing
+    redirect: author/plugin/things/update/:id
+    redirectClose: author/plugin/things
+
+# Update page
+update:
+    title: Edit Thing
+    redirect: author/plugin/things
+    redirectClose: author/plugin/things
+
+# Preview page
+preview:
+    title: Preview Thing
