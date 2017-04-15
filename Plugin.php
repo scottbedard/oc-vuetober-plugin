@@ -14,6 +14,16 @@ class Plugin extends PluginBase
     public $require = [];
 
     /**
+     * Boot method, called right before the request route.
+     *
+     * @return array
+     */
+    public function boot()
+    {
+
+    }
+
+    /**
      * Returns information about this plugin.
      *
      * @return array
@@ -39,16 +49,6 @@ class Plugin extends PluginBase
     }
 
     /**
-     * Boot method, called right before the request route.
-     *
-     * @return array
-     */
-    public function boot()
-    {
-
-    }
-
-    /**
      * Registers any front-end components implemented in this plugin.
      *
      * @return array
@@ -59,23 +59,6 @@ class Plugin extends PluginBase
 
         return [
             'Author\Plugin\Components\MyComponent' => 'myComponent',
-        ];
-    }
-
-    /**
-     * Registers any back-end permissions used by this plugin.
-     *
-     * @return array
-     */
-    public function registerPermissions()
-    {
-        return []; // Remove this line to activate
-
-        return [
-            'author.plugin.some_permission' => [
-                'tab' => 'Plugin',
-                'label' => 'Some permission'
-            ],
         ];
     }
 
@@ -101,6 +84,23 @@ class Plugin extends PluginBase
                         'url'           => Backend::url('author/plugin/things'),
                     ],
                 ],
+            ],
+        ];
+    }
+
+    /**
+     * Registers any back-end permissions used by this plugin.
+     *
+     * @return array
+     */
+    public function registerPermissions()
+    {
+        return []; // Remove this line to activate
+
+        return [
+            'author.plugin.some_permission' => [
+                'tab' => 'Plugin',
+                'label' => 'Some permission'
             ],
         ];
     }
