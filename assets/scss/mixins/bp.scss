@@ -1,0 +1,23 @@
+// .example-usage {
+//     color: red;
+//
+//     @include bp(desktop) {
+//         color: blue;
+//     }
+//
+//     @include bp('min-width: 1200px') {
+//         color: orange;
+//     }
+// }
+
+@mixin bp($bp) {
+    @if map-get($breakpoints, $bp) {
+        @media screen and (map-get($breakpoints, $bp)) {
+            @content;
+        }
+    } @else {
+        @media screen and ($bp) {
+            @content;
+        }
+    }
+}

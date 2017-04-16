@@ -43,8 +43,8 @@ class Example extends FormWidgetBase
      */
     public function loadAssets()
     {
-        $this->addCss('css/example.css', 'Author.Plugin');
-        $this->addJs('js/example.js', 'Author.Plugin');
+        $this->addJs('/plugins/author/plugin/assets/dist/vendor.min.js', 'Author.Plugin');
+        $this->addJs('/plugins/author/plugin/assets/dist/example.min.js', 'Author.Plugin');
     }
 
     /**

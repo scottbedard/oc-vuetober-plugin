@@ -11,6 +11,7 @@ class CreateThingsTable extends Migration
         Schema::create('author_plugin_things', function(Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
+            $table->string('example')->default('');
             $table->timestamps();
         });
     }
