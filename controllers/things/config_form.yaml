@@ -6,25 +6,25 @@
 name: Thing
 
 # Model Form Field configuration
-form: $/author/plugin/models/thing/fields.yaml
+form: $/bedard/vuetober/models/thing/fields.yaml
 
 # Model Class name
-modelClass: Author\Plugin\Models\Thing
+modelClass: Bedard\Vuetober\Models\Thing
 
 # Default redirect location
-defaultRedirect: author/plugin/things
+defaultRedirect: bedard/vuetober/things
 
 # Create page
 create:
     title: Create Thing
-    redirect: author/plugin/things/update/:id
-    redirectClose: author/plugin/things
+    redirect: bedard/vuetober/things/update/:id
+    redirectClose: bedard/vuetober/things
 
 # Update page
 update:
     title: Edit Thing
-    redirect: author/plugin/things
-    redirectClose: author/plugin/things
+    redirect: bedard/vuetober/things
+    redirectClose: bedard/vuetober/things
 
 # Preview page
 preview:

@@ -1,4 +1,4 @@
-<?php namespace Author\Plugin\Updates;
+<?php namespace Bedard\Vuetober\Updates;
 
 use Schema;
 use October\Rain\Database\Schema\Blueprint;
@@ -8,7 +8,7 @@ class CreateThingsTable extends Migration
 {
     public function up()
     {
-        Schema::create('author_plugin_things', function(Blueprint $table) {
+        Schema::create('bedard_vuetober_things', function(Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('example')->default('');
@@ -18,6 +18,6 @@ class CreateThingsTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('author_plugin_things');
+        Schema::dropIfExists('bedard_vuetober_things');
     }
 }

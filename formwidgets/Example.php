@@ -1,4 +1,4 @@
-<?php namespace Author\Plugin\FormWidgets;
+<?php namespace Bedard\Vuetober\FormWidgets;
 
 use Backend\Classes\FormWidgetBase;
 
@@ -10,7 +10,7 @@ class Example extends FormWidgetBase
     /**
      * @inheritDoc
      */
-    protected $defaultAlias = 'author_plugin_example';
+    protected $defaultAlias = 'bedard_vuetober_example';
 
     /**
      * @inheritDoc
@@ -43,8 +43,8 @@ class Example extends FormWidgetBase
      */
     public function loadAssets()
     {
-        $this->addJs('/plugins/author/plugin/assets/dist/vendor.min.js', 'Author.Plugin');
-        $this->addJs('/plugins/author/plugin/assets/dist/example.min.js', 'Author.Plugin');
+        $this->addJs('/plugins/bedard/vuetober/assets/dist/vendor.min.js', 'Bedard.Vuetober');
+        $this->addJs('/plugins/bedard/vuetober/assets/dist/example.min.js', 'Bedard.Vuetober');
     }
 
     /**

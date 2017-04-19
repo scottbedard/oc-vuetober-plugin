@@ -1,4 +1,4 @@
-<?php namespace Author\Plugin;
+<?php namespace Bedard\Vuetober;
 
 use Backend;
 use System\Classes\PluginBase;
@@ -58,7 +58,7 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            'Author\Plugin\Components\MyComponent' => 'myComponent',
+            'Bedard\Vuetober\Components\MyComponent' => 'myComponent',
         ];
     }
 
@@ -72,16 +72,16 @@ class Plugin extends PluginBase
         return [
             'plugin' => [
                 'icon'        => 'icon-leaf',
-                'label'       => 'author.plugin::lang.plugin.name',
+                'label'       => 'bedard.vuetober::lang.plugin.name',
                 'order'       => 500,
-                'permissions' => ['author.plugin.*'],
-                'url'         => Backend::url('author/plugin/things'),
+                'permissions' => ['bedard.vuetober.*'],
+                'url'         => Backend::url('bedard/vuetober/things'),
                 'sideMenu' => [
                     'things' => [
                         'icon'          => 'icon-leaf',
                         'label'         => 'Things',
                         'permissions'   => [],
-                        'url'           => Backend::url('author/plugin/things'),
+                        'url'           => Backend::url('bedard/vuetober/things'),
                     ],
                 ],
             ],
@@ -98,7 +98,7 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            'author.plugin.some_permission' => [
+            'bedard.vuetober.some_permission' => [
                 'tab' => 'Plugin',
                 'label' => 'Some permission'
             ],

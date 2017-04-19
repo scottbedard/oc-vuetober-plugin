@@ -1,4 +1,4 @@
-<?php namespace Author\Plugin\Controllers;
+<?php namespace Bedard\Vuetober\Controllers;
 
 use BackendMenu;
 use Backend\Classes\Controller;
@@ -23,6 +23,6 @@ class Things extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Author.Plugin', 'plugin', 'things');
+        BackendMenu::setContext('Bedard.Vuetober', 'plugin', 'things');
     }
 }

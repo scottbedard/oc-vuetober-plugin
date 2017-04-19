@@ -5,5 +5,5 @@ module.exports = {
     proxy: 'localhost',
 
     // the public path lets webpack know where compiled files are
-    publicPath: '/plugins/author/plugin',
+    publicPath: '/plugins/bedard/vuetober',
 };

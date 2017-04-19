@@ -5,4 +5,4 @@
 fields:
     example:
         name: Example form widget
-        type: Author\Plugin\FormWidgets\Example
+        type: Bedard\Vuetober\FormWidgets\Example

@@ -51,7 +51,7 @@ const hotMiddleware = require('webpack-hot-middleware')(compiler, {
 app.use(proxyMiddleware(config.publicPath + '/assets/dist/vendor.min.js', {
     target: proxy,
     pathRewrite() {
-        return '/plugins/author/plugin/assets/js/void.js';
+        return '/plugins/bedard/vuetober/assets/js/void.js';
     },
 }));
 
@@ -59,7 +59,7 @@ app.use(proxyMiddleware(config.publicPath + '/assets/dist/vendor.min.js', {
 app.use(proxyMiddleware(
     function(pathname) {
         return pathname.indexOf('__webpack') === -1
-            && pathname.indexOf('author/plugin/assets') === -1;
+            && pathname.indexOf('bedard/vuetober/assets') === -1;
     },
     { target: proxy }
 ));

@@ -3,16 +3,16 @@
 # ===================================
 
 # Model List Column configuration
-list: $/author/plugin/models/thing/columns.yaml
+list: $/bedard/vuetober/models/thing/columns.yaml
 
 # Model Class name
-modelClass: Author\Plugin\Models\Thing
+modelClass: Bedard\Vuetober\Models\Thing
 
 # List Title
 title: Manage Things
 
 # Link URL for each record
-recordUrl: author/plugin/things/update/:id
+recordUrl: bedard/vuetober/things/update/:id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records

@@ -5,7 +5,7 @@
             for this filter to work, make sure you're passing in the
             neccessary language strings in the _example.htm partial
         -->
-        <label>{{ 'author.plugin::lang.example.message' | trans(lang) }}</label>
+        <label>{{ 'bedard.vuetober::lang.example.message' | trans(lang) }}</label>
 
         <!--
             we can pass our data back to October by using a name that

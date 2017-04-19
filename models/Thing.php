@@ -1,4 +1,4 @@
-<?php namespace Author\Plugin\Models;
+<?php namespace Bedard\Vuetober\Models;
 
 use Model;
 
@@ -10,7 +10,7 @@ class Thing extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'author_plugin_things';
+    public $table = 'bedard_vuetober_things';
 
     /**
      * @var array Guarded fields
